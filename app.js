@@ -1,4 +1,6 @@
 'use stricts'
+
+
 const galleryItems = [
   {
     preview:
@@ -72,7 +74,7 @@ const refs = {
   overlayGallery: document.querySelector('.lightbox__overlay'),
   arrayImagesForChange: document.querySelectorAll('.gallery__image'),
 };
-
+ 
 let activeIndex = 0;
 const searchActiveIndex = onChangeImageByKey(galleryItems);
 const galleryMarkup = createCardsGalleryMarkup(galleryItems);
@@ -80,6 +82,7 @@ refs.closeBtnModalWindow.addEventListener('click',onCloseModalWindow)
 refs.overlayGallery.addEventListener('click', onBackdropClick)
 refs.galleryContainer.insertAdjacentHTML('beforeend', galleryMarkup);
 refs.galleryContainer.addEventListener('click',onGalleryContainerClick)
+
 
 // функция создания разметки
 function createCardsGalleryMarkup(gallery) {
