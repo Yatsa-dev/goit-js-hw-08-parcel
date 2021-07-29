@@ -167,7 +167,7 @@ function onBackdropClick(event) {
   if (event.currentTarget === event.target)
     onCloseModalWindow()
 }
-// закритие модалки по клавише Esc
+// закрытие модалки по клавише Esc
 function onEscKeyPress(event) {
   if (event.code === 'Escape') {
      onCloseModalWindow()
